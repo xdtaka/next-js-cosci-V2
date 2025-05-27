@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from "react"
+
 
 //to make it become attribute like html
 type WelcomeProps = {
@@ -8,10 +10,12 @@ type WelcomeProps = {
 }
 
 export default function Welcome({ headTitle, isShow }: WelcomeProps) {
-    const text = "welcome to cosci"
+    // const text = "welcome to cosci"
+    const [text, setText] = useState("CoSci lover")
     // const currentYear = <p>2025</p>
     const year = 2025
     const handleClick = () => {
+        setText("Nihao fine shyt")
         alert("Hello sir")
     }
     return (
