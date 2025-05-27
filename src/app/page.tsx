@@ -5,9 +5,7 @@ export default function Home() {
     <div>
       <h1>Goon page</h1>
       <hr />
-      <Welcome />
-      <Welcome />
-      <Welcome />
+      <Welcome headTitle="Damn" isShow={false} />
       
     </div>
   );
