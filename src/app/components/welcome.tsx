@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { DESTRUCTION } from "dns"
 
 
 //to make it become attribute like html
@@ -23,7 +25,8 @@ export default function Welcome({ headTitle, isShow }: WelcomeProps) {
             <h1>{headTitle}</h1>
             <p >{text.toLocaleUpperCase()} {year}</p>
             {isShow && <p>Date:10/10/1998</p>}
-            <button className="bg-blue-700 text-amber-300 p-3 m-3  rounded-lg " onClick={handleClick}>Click Me</button>
+            {/* <button className="bg-blue-700 text-amber-300 p-3 m-3  rounded-lg " onClick={handleClick}>Click Me</button> */}
+            <Button variant="destructive" onClick={handleClick} className="p-3 m-3">Click Me</Button>
             {/* {isShow ? <p>Hello Next.js</p> : <p>Hello Javascript</p>} */}
             
         </div>

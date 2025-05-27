@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <h1>Goon page</h1>
       <hr />
-      <Welcome headTitle="Damn" isShow={false} />
+      <Welcome headTitle="ฉันรัก Younggu" isShow={false} />
       
     </div>
   );
