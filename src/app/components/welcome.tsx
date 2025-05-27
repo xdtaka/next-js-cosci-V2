@@ -2,8 +2,6 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { DESTRUCTION } from "dns"
-
 
 //to make it become attribute like html
 type WelcomeProps = {
@@ -28,7 +26,7 @@ export default function Welcome({ headTitle, isShow }: WelcomeProps) {
             {/* <button className="bg-blue-700 text-amber-300 p-3 m-3  rounded-lg " onClick={handleClick}>Click Me</button> */}
             <Button variant="destructive" onClick={handleClick} className="p-3 m-3">Click Me</Button>
             {/* {isShow ? <p>Hello Next.js</p> : <p>Hello Javascript</p>} */}
-            
+            <p>{process.env.NEXT_PUBLIC_APP_NAME}</p>
         </div>
     );
 }
