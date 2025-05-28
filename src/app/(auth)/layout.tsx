@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { K2D } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 // import Navbar from "./components/navbar";
-import Navbar01Page from "@/components/navbar-01/navbar-01";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -36,7 +35,6 @@ export default function RootLayout({
       <body
         className={`${k2d.className} antialiased`}
       >
-        <Navbar01Page/>
         {children}
       </body>
     </html>
