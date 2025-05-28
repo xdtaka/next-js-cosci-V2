@@ -34,6 +34,8 @@ export default function RootLayout({
       <body
         className={`${k2d.className} antialiased`}
       >
+        <h1>Header na</h1>
+        <hr />
         {children}
       </body>
     </html>
