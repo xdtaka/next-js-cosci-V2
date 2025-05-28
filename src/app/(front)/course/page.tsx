@@ -7,7 +7,7 @@ export default async function Course() {
 
   return (
     <main>
-          <Features05Page courses={courses} />
+          <Features05Page courses={courses.data} />
     </main>
   );
 }
