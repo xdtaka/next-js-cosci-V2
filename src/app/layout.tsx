@@ -37,7 +37,6 @@ export default function RootLayout({
         className={`${k2d.className} antialiased`}
       >
         <Navbar01Page/>
-        <hr />
         {children}
       </body>
     </html>
