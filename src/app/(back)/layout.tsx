@@ -21,11 +21,11 @@ const k2d = K2D({
 })
 
 export const metadata: Metadata = {
-  title: "Login plz",
+  title: "Dashboard",
   description: "ขายสินค้าของนักศึกษา ประจำปี 2568",
 };
 
-export default function AuthLayout({
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
