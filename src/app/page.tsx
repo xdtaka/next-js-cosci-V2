@@ -1,10 +1,9 @@
-import Welcome from "./components/welcome";
+import Hero02 from "@/components/hero-02/hero-02";
 
 export default function Home() {
   return (
     <div>
-      <Welcome headTitle="ฉันรัก Younggu" isShow={false} />
-      
+      <Hero02/>
     </div>
   );
 }
