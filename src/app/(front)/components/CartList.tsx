@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useCartStore } from "@/lib/cart-store";
 import { TrashIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function CartList() {
+    const router = useRouter()
     const items = useCartStore((state) => state.items)
     const removeItem = useCartStore((state) => state.removeItem)
     const clearCart = useCartStore((state) => state.clearCart)
@@ -62,7 +64,7 @@ export default function CartList() {
               </div>
               <div className="mr-15">
                   <Button variant="destructive" onClick={() => { clearCart() }}>ลบสินค้าทั้งหมด</Button>
-                  <Button variant="outline" className="ml-5" onClick={() => {  }}>ยืนยันการซื้อสินค้า</Button>
+                  <Button variant="outline" className="ml-5" onClick={() => { router.replace("/product") }}>ยืนยันการซื้อสินค้า</Button>
               </div>
         </div>
     </div>
