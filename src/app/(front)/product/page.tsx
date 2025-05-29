@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Select,
@@ -11,7 +10,7 @@ import {
 import db from "@/db";
 import { product } from "@/db/schema";
 import { desc } from "drizzle-orm";
-import { ChevronRight } from "lucide-react";
+import CartButton from "../components/cartButton";
 
 const productPage = async () => {
 
@@ -55,9 +54,8 @@ const productPage = async () => {
                 ซื้อทีได้โปรด
               </p>
 
-              <Button className="mt-6 shadow-none">
-                หยิบใส่ตะกร้า <ChevronRight />
-              </Button>
+              <CartButton product={i}></CartButton>   
+              
             </CardContent>
           </Card>
         ))}
