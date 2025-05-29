@@ -3,6 +3,8 @@ import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 import Link from "next/link";
+import { ShoppingBasket } from "lucide-react";
+import { Badge } from "../ui/badge";
 
 const Navbar01Page = () => {
   return (
@@ -15,6 +17,12 @@ const Navbar01Page = () => {
           <NavMenu className="hidden md:block" />
 
           <div className="flex items-center gap-3">
+
+            <Badge className="p-2 text-sm flex items-center gap-2">
+              <ShoppingBasket />
+              <span>0 Item(s)</span>
+            </Badge>
+
             <Button variant="outline" className="hidden sm:inline-flex" asChild>
               <Link href="/login">เข้าสู่ระบบ</Link>
             </Button>
