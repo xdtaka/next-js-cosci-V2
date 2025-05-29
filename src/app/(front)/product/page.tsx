@@ -13,7 +13,7 @@ import { ChevronRight } from "lucide-react";
 
 const productPage = async () => {
 
-  const products = await db.query.product.findMany
+  const products = await db.query.product.findMany()
 
   return (
     
