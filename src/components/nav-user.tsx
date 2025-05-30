@@ -28,6 +28,14 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import { useRouter } from "next/navigation"
+import { authClient } from "@/lib/auth-client"
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
 
 export function NavUser({
   user,
@@ -38,6 +46,13 @@ export function NavUser({
     avatar: string
   }
 }) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  const router = useRouter();
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
   const { isMobile } = useSidebar()
 
   return (
@@ -98,7 +113,23 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
+<<<<<<< HEAD
             <DropdownMenuItem>
+=======
+<<<<<<< HEAD
+            <DropdownMenuItem>
+=======
+            <DropdownMenuItem onClick={ async () => {
+               await authClient.signOut({
+                fetchOptions: {
+                  onSuccess: () => {
+                    router.replace('/');
+                  }
+                }
+               });
+            }}>
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
               <IconLogout />
               Log out
             </DropdownMenuItem>

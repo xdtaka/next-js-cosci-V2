@@ -29,12 +29,26 @@
     "@radix-ui/react-tooltip": "^1.2.7",
     "@tabler/icons-react": "^3.33.0",
     "@tanstack/react-table": "^8.21.3",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "better-auth": "^1.2.8",
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.44.0",
     "lucide-react": "^0.511.0",
+<<<<<<< HEAD
     "middleware": "^1.0.0",
+=======
+<<<<<<< HEAD
+    "middleware": "^1.0.0",
+=======
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
     "mysql2": "^3.14.1",
     "next": "15.3.2",
     "next-themes": "^0.4.6",

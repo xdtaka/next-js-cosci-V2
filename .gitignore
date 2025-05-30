@@ -31,7 +31,15 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
+<<<<<<< HEAD
 .env*
+=======
+<<<<<<< HEAD
+.env*
+=======
+#.env*
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
 
 # vercel
 .vercel

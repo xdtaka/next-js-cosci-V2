@@ -29,9 +29,20 @@ const createDb = () => {
     const pool = createPool();
     poolInstance = pool; // เก็บ reference
     return drizzle(pool, { 
+<<<<<<< HEAD
         // schema: { ...schema, ...relations }, 
         schema: { ...schema}, 
 
+=======
+<<<<<<< HEAD
+        // schema: { ...schema, ...relations }, 
+        schema: { ...schema}, 
+
+=======
+    //   schema: { ...schema, ...relations }, 
+      schema: { ...schema }, 
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
       mode: "default"
     });
   } catch (error) {

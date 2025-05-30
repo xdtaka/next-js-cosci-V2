@@ -10,6 +10,10 @@ import {
 import db from "@/db";
 import { product } from "@/db/schema";
 import { desc } from "drizzle-orm";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f91e2c (Created new)
 import CartButton from "../components/cartButton";
 
 const productPage = async () => {
@@ -21,6 +25,22 @@ const productPage = async () => {
     <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
       <div className="flex items-end justify-between">
         <h2 className="text-3xl font-bold tracking-tight">Products</h2>
+<<<<<<< HEAD
+=======
+=======
+import CartButton from "../components/CartButton";
+
+const Product = async () => {
+  const products = await db.query.product.findMany({
+    orderBy: [desc(product.id)]
+  });
+
+  return (
+    <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
+      <div className="flex items-end justify-between">
+        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
         <Select defaultValue="recommended">
           <SelectTrigger className="w-[180px]">
             <SelectValue />
@@ -41,6 +61,10 @@ const productPage = async () => {
             </CardHeader>
             <CardContent className="py-6">
               <div className="flex items-center gap-3">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f91e2c (Created new)
                 <Badge className="p-5 bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
                   {i.price} บาท
                 </Badge>
@@ -56,6 +80,22 @@ const productPage = async () => {
 
               <CartButton product={i}></CartButton>   
               
+<<<<<<< HEAD
+=======
+=======
+                <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
+                  ราคา {i.price} บาท
+                </Badge>
+              </div>
+
+              <h2 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
+                {i.title}
+              </h2>
+
+              <CartButton product={i} />
+
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
             </CardContent>
           </Card>
         ))}
@@ -64,4 +104,12 @@ const productPage = async () => {
   );
 };
 
+<<<<<<< HEAD
 export default productPage;
+=======
+<<<<<<< HEAD
+export default productPage;
+=======
+export default Product;
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)

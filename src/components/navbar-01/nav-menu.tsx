@@ -27,7 +27,11 @@ export const NavMenu = (props: NavigationMenuProps) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
+<<<<<<< HEAD
           <Link href="/course">คอร์สเรียน</Link>
+=======
+          <Link href="/course">หลักสูตร ฟรี</Link>
+>>>>>>> 7f91e2c (Created new)
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>

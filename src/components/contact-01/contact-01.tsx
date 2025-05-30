@@ -2,11 +2,25 @@ import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 type Contact01PageProps = {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f91e2c (Created new)
   version : string
 }
 
 const Contact01Page = ( { version }:Contact01PageProps ) => (
   <div className="min-h-175 flex items-center justify-center">
+<<<<<<< HEAD
+=======
+=======
+  version: string;
+}
+
+const Contact01Page = ({ version }: Contact01PageProps) => (
+  <div className="min-h-screen flex items-center justify-center">
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
     <div className="text-center">
       <b className="text-muted-foreground">Contact Us</b>
       <h2 className="mt-3 text-2xl md:text-4xl font-bold tracking-tight">

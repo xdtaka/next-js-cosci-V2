@@ -32,11 +32,26 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f91e2c (Created new)
 
 const data = {
   user: {
     name: "shadcn",
     email: "m@exaghjgjmple.com",
+<<<<<<< HEAD
+=======
+=======
+import { authClient } from "@/lib/auth-client"
+
+const data = {
+  user: {
+    name: "shadcn 2",
+    email: "m@example.com",
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
@@ -151,6 +166,14 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  const { data: session } = authClient.useSession();
+  
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -174,7 +197,23 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
+<<<<<<< HEAD
         <NavUser user={data.user} />
+=======
+<<<<<<< HEAD
+        <NavUser user={data.user} />
+=======
+
+        {
+          session && <NavUser user={{
+            name: session.user.name,
+            email: session.user.email,
+            avatar: "/avatars/shadcn.jpg"
+          }} />
+        }
+
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
       </SidebarFooter>
     </Sidebar>
   )

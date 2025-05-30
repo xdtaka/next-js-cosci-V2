@@ -72,7 +72,15 @@ const footerSections = [
 
 const Footer03Page = () => {
   return (
+<<<<<<< HEAD
     <div className="bg-amber-50 flex flex-col text-amber-950">
+=======
+<<<<<<< HEAD
+    <div className="bg-amber-50 flex flex-col text-amber-950">
+=======
+    <div className="flex flex-col">
+>>>>>>> 2af5971 (Initial commit)
+>>>>>>> 7f91e2c (Created new)
       <div className="grow bg-muted" />
       <hr />
       <footer>
